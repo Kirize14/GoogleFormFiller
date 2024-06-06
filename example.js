@@ -10,8 +10,8 @@ let autoSubmit = false;
 if(document.querySelectorAll('title')[0].innerText == "Too Many Requests")location.reload();
 
 
-let answerBox = document.querySelectorAll("input:enabled, select:enabled, textarea:enabled");
-let questionBox = document.querySelectorAll("input:enabled, select:enabled, textarea:enabled");
+let answerBox = document.querySelectorAll("input:enabled[class], select:enabled, textarea:enabled");
+let questionBox = document.querySelectorAll("input:enabled[class], select:enabled, textarea:enabled");
 for (let i = 0; i < questionBox.length; i++) {
     let question = questionBox[i].parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.querySelector('div').innerText;
     let answer;
